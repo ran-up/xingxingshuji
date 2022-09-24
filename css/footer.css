@@ -1,0 +1,30 @@
+/* 版权信息 */
+.footer {
+    /* 开启BFC，清除浮动带来的影响 */
+    overflow: hidden;
+    min-width: 1200px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.footer ul {
+    padding: 15px 0;
+    transform: translate(20%);
+}
+
+.footer li {
+    float: left;
+    list-style: none;
+}
+
+.footer li span {
+    padding: 0 10px;
+}
+
+.footer li a:hover {
+    color: #e33333;
+}
+
+.footer p {
+    line-height: 20px;
+}

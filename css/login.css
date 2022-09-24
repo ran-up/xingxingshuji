@@ -1,0 +1,221 @@
+.container {
+    min-width: 1200px;
+}
+
+/* logo图片 */
+.logo {
+    position: relative;
+    width: 230px;
+    height: 100px;
+}
+
+.logo img {
+    width: 230px;
+    height: 100px;
+    vertical-align: middle;
+}
+
+.logo h2 {
+    position: absolute;
+    width: 200px;
+    top: 50%;
+    right: -80%;
+    transform: translateY(-60%);
+    font-size: 20px;
+    color: #4A4A4A;
+}
+
+/* 背景和登录区域设置 */
+.content {
+    position: relative;
+    width: 100%;
+    height: 488px;
+}
+
+
+/* 背景设置 */
+.bg {
+    width: 100%;
+    height: 488px;
+    background: url(../images/login2.png) repeat;
+}
+
+/* 多只手图片 */
+.logins::before {
+    content: "";
+    position: absolute;
+    right: 140%;
+    top: -1%;
+    width: 590px;
+    height: 488px;
+    background: url(../images/login1.png) no-repeat;
+}
+
+/* 登录区域  */
+.logins {
+    position: absolute;
+    top: 12%;
+    right: 12%;
+    padding: 20px 39px 15px 37px;
+    width: 303px;
+    height: 327px;
+    background-color: #fff;
+}
+
+/* 显示的表头设置 */
+.content_title {
+    font-size: 18px;
+    color: #ededed;
+}
+
+/* 表头字体设置 */
+.content_title span {
+    padding: 0 10px;
+    font-size: 18px;
+    color: #666;
+    cursor: pointer;
+}
+
+/* 当前显示表头的颜色 */
+.content_title .current {
+    color: #c81623;
+}
+
+/* 左边二维码设置 */
+.content_l {
+    display: none;
+}
+
+.content_l p {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    font-size: 20px;
+}
+
+/* 右边样式设置 */
+.content_r {
+    margin: 20px 0 32px 0;
+}
+
+.content_r h3 {
+    width: 290px;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 10px;
+    border: 1px solid #f5eecf;
+    font-weight: 400;
+}
+
+/* 对输入框前面的图片进行定位 */
+.content_r li {
+    position: relative;
+}
+
+/* 输入框 */
+.content_r .uname,
+.content_r .psd {
+    position: relative;
+    width: 255px;
+    height: 33px;
+    padding-left: 45px;
+    border: 1px solid #bbbaba;
+}
+
+.content_r .uname {
+    margin: 15px 0;
+}
+
+/* 输入框前面的图片 */
+.content_r img {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 40px;
+    height: 35px;
+    border: none;
+    z-index: 2;
+}
+
+.content_r .img2 {
+    top: 0;
+}
+
+.content_r li:nth-last-child(2) {
+    margin: 20px 0;
+}
+
+/* 复选框 */
+.content_r .denglu input {
+    float: left;
+    margin: 2px 5px 0 5px;
+    width: 14px;
+    height: 14px;
+}
+
+/*忘记密码  */
+.content_r .denglu a {
+    float: right;
+    margin-right: 8px;
+    font-weight: 700;
+}
+
+.content_r .denglu a:hover {
+    color: #c81623;
+}
+
+/* 登陆按钮 */
+.content_r .btn {
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #c81623;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* 登录方式 */
+.content_bottom {
+    position: absolute;
+    bottom: 18px;
+    left: 40px;
+}
+
+.content_bottom ul {
+    float: left;
+    width: 303px;
+    height: 32px;
+}
+
+.content_bottom li {
+    float: left;
+    margin-right: 18px;
+    cursor: pointer;
+}
+
+.content_bottom li img {
+    width: 33px;
+    height: 32px;
+}
+
+.content_bottom li img:hover {
+    transform: scale(1.2);
+}
+
+.content_bottom a {
+    position: absolute;
+    right: 8px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    color: #1474af;
+}
+
+.content_bottom a:hover {
+    color: #c81623;
+}

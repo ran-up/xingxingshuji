@@ -1,0 +1,169 @@
+.container {
+    min-width: 1200px;
+}
+
+/* logo图片 */
+.logo {
+    position: relative;
+    width: 230px;
+    height: 100px;
+}
+
+.logo img {
+    width: 230px;
+    height: 100px;
+    vertical-align: middle;
+}
+
+.logo h2 {
+    position: absolute;
+    width: 200px;
+    top: 50%;
+    right: -80%;
+    transform: translateY(-60%);
+    font-size: 20px;
+    color: #4A4A4A;
+}
+
+
+/* 注册框信息区域 */
+.registerarea {
+    height: 520px;
+    border: 1px solid #CCC;
+}
+
+.registerarea_hd {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    border-bottom: 1px solid #CCC;
+    background-color: #ECECEC;
+    color: #737573;
+}
+
+.registerarea_hd h3 {
+    float: left;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.registerarea_hd p {
+    float: right;
+    font-size: 14px;
+}
+
+
+/* 登陆链接 */
+.registerarea_hd p a {
+    font-size: 14px;
+    color: #C81623;
+}
+
+/* 注册表单 */
+.registerarea_bd {
+    height: 480px;
+}
+
+.registerarea_bd ul {
+    width: 600px;
+    margin: 50px auto;
+}
+
+.registerarea_bd li {
+    margin-bottom: 20px;
+}
+
+.registerarea_bd li label {
+    display: inline-block;
+    width: 100px;
+    height: 36px;
+    line-height: 36px;
+    text-align: right;
+}
+
+/* 信息输入框 */
+.registerarea_bd li .ipt {
+    padding-left: 5px;
+    width: 238px;
+    height: 34px;
+    border: 1px solid #ccc;
+}
+
+/* 信息输入 正确与错误 提示 图片 */
+.registerarea_bd li .error {
+    display: none;
+}
+
+.registerarea_bd li .error_icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-top: -2px;
+    margin-left: 5px;
+    background: url(../images/error.png) no-repeat left center;
+    /* 使文字同图片居中对齐 */
+    vertical-align: middle;
+}
+
+/* 信息输入 正确与错误 提示语言*/
+.registerarea_bd li span {
+    text-align: center;
+    font-size: 12px;
+    color: #C81623;
+}
+
+/* 密码安全等级提示框 */
+.registerarea_bd .safe {
+    margin-left: 184px;
+}
+
+.registerarea_bd .safe .ruo,
+.registerarea_bd .safe .zhong,
+.registerarea_bd .safe .qiang {
+    display: inline-block;
+    width: 34px;
+    height: 16px;
+    line-height: 16px;
+    background-color: #de1111;
+    text-align: center;
+    color: #fff;
+}
+
+.registerarea_bd .safe .zhong {
+    background-color: #40b83f;
+}
+
+.registerarea_bd .safe .qiang {
+    background-color: #f79100;
+}
+
+/* 协议选择框 */
+.registerarea_bd li:nth-last-child(2) {
+    margin: 42px 0 0 88px;
+}
+
+.registerarea_bd li:nth-last-child(2) input {
+    margin-top: -1px;
+    vertical-align: middle;
+}
+
+/* 协议选择链接颜色 */
+.registerarea_bd li:nth-last-child(2) a {
+    color: #1ba1e6;
+}
+
+.registerarea_bd li:last-child {
+    margin: 50px 0 0 122px;
+}
+
+/* 注册按钮 */
+.registerarea_bd .btn {
+    width: 200px;
+    height: 34px;
+    line-height: 34px;
+    background-color: #c81623;
+    border: none;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}

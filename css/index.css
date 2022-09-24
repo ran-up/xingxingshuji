@@ -1,0 +1,885 @@
+/* 快速导航栏区域 */
+.shortcut {
+    /* 开启BFC */
+    overflow: hidden;
+    min-width: 1200px;
+    height: 30px;
+    line-height: 30px;
+    background: #E3E4E5;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+/* 左边 */
+.shortcut .fl {
+    float: left;
+    width: 58px;
+    height: 31px;
+    text-align: center;
+    color: #999;
+}
+
+.shortcut .fl i {
+    font-size: 16px;
+    color: #F10215;
+}
+
+.shortcut .fl span {
+    vertical-align: top;
+    font-size: 12px;
+}
+
+.shortcut .fl:hover {
+    background-color: #fff;
+    color: #F10215;
+    cursor: pointer;
+}
+
+/* 中间 */
+.shortcut .user {
+    float: left;
+    margin-left: 120px;
+}
+
+.shortcut .user li {
+    float: left;
+    margin: 0 10px;
+}
+
+.shortcut .user li a:hover {
+    color: #F10215;
+}
+
+/* 右边 */
+.shortcut .fr {
+    float: right;
+    padding-right: 120px;
+}
+
+.shortcut .fr li {
+    float: left;
+}
+
+.shortcut .fr li span {
+    margin: 0 12px;
+}
+
+.shortcut .fr li a:hover {
+    color: #F10215;
+}
+
+/* 头部区域 */
+/* logo */
+.header {
+    overflow: hidden;
+    min-width: 1200px;
+    height: 120px;
+}
+
+.header .logo {
+    float: left;
+    margin-top: 10px;
+    width: 250px;
+    height: 100px;
+}
+
+.header .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+/* search */
+.header .search {
+    float: left;
+    margin-left: 150px;
+    line-height: 120px;
+}
+
+.header .search .input-t {
+    padding-left: 2px;
+    width: 460px;
+    height: 30px;
+    border: 4px solid #065221;
+    border-radius: 2px;
+}
+
+.header .search .serbtn {
+    position: relative;
+    top: 2px;
+    left: -8px;
+    width: 38px;
+    height: 38px;
+    border-left: 1px solid #065221;
+    background-color: #065221;
+    color: #fff;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+/* car */
+.header .car {
+    float: right;
+    margin-top: 40px;
+    width: 148px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #065221;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 1px 1px rgba(0, 0, 0, .5);
+}
+
+/* 购物车的三角 */
+.header .car::after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    top: -8px;
+    left: 6px;
+    width: 5px;
+    height: 5px;
+    border: 1px solid #696365;
+    border-color: transparent #696365 #696365 transparent;
+    transform: rotate(45deg);
+}
+
+/* 主体部分 */
+.main {
+    min-width: 1200px;
+}
+
+.main .top {
+    /* 开启BFC，清除浮动的影响 */
+    overflow: hidden;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #065221;
+    font-size: 14px;
+    color: #fff;
+}
+
+.main .top .top-left {
+    float: left;
+    margin-left: 80px;
+}
+
+.main .top .top-left span {
+    font-size: 16px;
+}
+
+.main .top .top-left a {
+    margin-left: 80px;
+    color: #fff;
+}
+
+/* 主体顶部的积分商城区域 */
+.main .top .top-right {
+    float: right;
+    color: #696365;
+}
+
+.main .top .top-right a {
+    display: inline-block;
+    padding: 0 5px;
+    color: #fff;
+}
+
+/* 鼠标经过主体顶部的积分商城区域字体的效果 */
+.main .top .top-right a:hover {
+    background: #eee;
+    font-weight: bold;
+    color: #F10215;
+}
+
+/* nav 部分 */
+.nav {
+    /* 开启BFC，清除浮动的影响 */
+    overflow: hidden;
+}
+
+.nav-items {
+    float: left;
+}
+
+/* 左边的一级书名菜单 */
+.nav-items>ul {
+    /* 作为二级菜单的父级 */
+    position: relative;
+    width: 234px;
+    height: 390px;
+    border: 2px solid #065221;
+    box-sizing: border-box;
+}
+
+/* 设置一级菜单li的样式 */
+.nav-items>ul>li {
+    /* 作为三角模块的父级 */
+    position: relative;
+    padding-left: 15px;
+    height: 55px;
+    line-height: 55px;
+}
+
+/* 设置一二级菜单中字体的样式 */
+.nav-items>ul>li>a {
+    padding-left: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* 每个菜单的三角 */
+/* .nav-items类的子代ul的子代li的子代a设置伪元素after */
+.nav-items>ul>li::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    width: 4px;
+    height: 4px;
+    border: 2px solid #999;
+    border-color: transparent #696365 #696365 transparent;
+    transform: rotate(-45deg);
+    cursor: pointer;
+}
+
+/* 设置一级菜单前面图标 */
+.nav-items>ul>li i {
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    /* vertical-align: middle; */
+    background: url(../images/ico.gif) no-repeat 0 0;
+}
+
+.nav-items>ul>li:nth-child(2) i {
+    background: url(../images/ico.gif) no-repeat 0 -25px;
+}
+
+.nav-items>ul>li:nth-child(3) i {
+    background: url(../images/ico.gif) no-repeat 0 -50px;
+}
+
+.nav-items>ul>li:nth-child(4) i {
+    background: url(../images/ico.gif) no-repeat 0 -75px;
+}
+
+.nav-items>ul>li:nth-child(5) i {
+    background: url(../images/ico.gif) no-repeat 0 -100px;
+}
+
+.nav-items>ul>li:nth-child(6) i {
+    background: url(../images/ico.gif) no-repeat 0 -125px;
+}
+
+.nav-items>ul>li:nth-child(7) i {
+    background: url(../images/ico.gif) no-repeat 0 -150px;
+}
+
+/* 二级菜单 */
+.secend {
+    /* 隐藏 */
+    display: none;
+    position: absolute;
+    left: 230px;
+    top: 6px;
+    min-width: 200px;
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+    border: 2px solid #065221;
+    border-left: none;
+    /* 处于其它容器的上层 */
+    z-index: 20;
+}
+
+.secend li {
+    float: left;
+}
+
+.secend li a {
+    padding-left: 12px;
+    font-size: 12px;
+    color: #666;
+}
+
+
+/* 鼠标滑过一级导航li的背景效果 */
+.nav-items>ul>li:hover {
+    background: #eee;
+}
+
+/* 鼠标滑过导航中字体的变色效果 */
+.nav-items ul li a:hover {
+    color: #F10215;
+}
+
+/* 鼠标滑过一级菜单时显示出对应的二级菜单 */
+.nav-items>ul>li:hover .secend {
+    display: block;
+}
+
+/* 滑动轮播图 */
+.nav .sliderbanner {
+    position: relative;
+    float: right;
+    /* 容器很宽 */
+    width: 956px;
+    height: 390px;
+}
+
+/* 轮播图的li */
+.nav .sliderbanner .items {
+    /* 将所有的Li定位到一起 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* 没有和容器一样宽 */
+    width: 900px;
+    height: 390px;
+}
+
+.nav .sliderbanner .items.active {
+    z-index: 5;
+}
+
+/* 轮播图的img */
+.nav .sliderbanner .items img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 轮播图左右切换按钮 */
+.nav .sliderbanner .gopre,
+.nav .sliderbanner .gonext {
+    position: absolute;
+    top: 150px;
+    width: 35px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 0 5% 5% 0;
+    text-align: center;
+    font-size: 40px;
+    color: #ccc;
+    cursor: pointer;
+    /* 保证在所有图片之上，二级菜单之下 */
+    z-index: 10;
+}
+
+/* 轮播图右边切换按钮 */
+.nav .sliderbanner .gonext {
+    right: 56px;
+    border-radius: 5% 0 0 5%;
+}
+
+/* 鼠标停留在轮播图左右两个箭头的效果 */
+.nav .sliderbanner .gopre:hover,
+.nav .sliderbanner .gonext:hover {
+    background: #7F7D7B;
+}
+
+/* 轮播图的小圆圈 */
+.nav .sliderbanner .pointers {
+    position: absolute;
+    bottom: 20px;
+    right: 76px;
+    z-index: 10;
+}
+
+.nav .sliderbanner .pointers li {
+    float: left;
+    margin-left: 5px;
+    width: 10px;
+    height: 10px;
+    background: #eee;
+    border-radius: 50%;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+    cursor: pointer;
+}
+
+.nav .sliderbanner .pointers li.activePointer {
+    background: #F00;
+}
+
+/* 推荐区域 */
+.recommend {
+    /* 开启BFC，清除浮动带来的影响 */
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.recommend_left {
+    float: left;
+    width: 976px;
+    height: 329px;
+    border: 1px solid #ededed;
+}
+
+/* 推荐头部文字 */
+.recommend_left .show_title {
+    width: 100%;
+    height: 39px;
+    line-height: 39px;
+    background: #F7F7F7;
+    border-bottom: 1px solid #ededed;
+}
+
+.recommend_left .show_title h3 {
+    float: left;
+    padding: 0 25px;
+    border-right: 1px solid #ededed;
+    font-weight: normal;
+    font-size: 14px;
+    color: #000;
+    cursor: pointer;
+}
+
+/* 推荐头部文字活动状态设置 */
+.recommend_left .show_title h3.activeTitle {
+    border-top: 1px solid #065221;
+    background: #fff;
+    color: #065221;
+    font-weight: bold;
+}
+
+/* 推荐头部的具体显示信息 */
+.recommend_left .show_info {
+    /* 开启BFC，清除浮动带来的影响 */
+    overflow: hidden;
+    width: 100%;
+    height: 289px;
+}
+
+/* 每个小li样式 */
+.recommend_left .show_info .infos {
+    /* 先隐藏每个详细信息板块 */
+    display: none;
+    height: 100%;
+}
+
+/* 显示第一个推荐信息板块 */
+.recommend_left .show_info .infos:first-child {
+    display: block;
+}
+
+/* 推荐的li设置 */
+/* 主体右边的li设置 */
+.recommend_left .show_info .info,
+.mains .main_info .infor .info {
+    float: left;
+    padding: 10px 0;
+    width: 242px;
+    height: 100%;
+    border-right: 1px solid #ededed;
+    text-align: center;
+}
+
+/* 取消最后一个li的右边框 */
+.recommend_left .show_info .info:last-child {
+    border-right: none;
+}
+
+/* 推荐头部显示的图片 */
+/* 主体右边显示的图片 */
+.recommend_left .show_info .info img,
+.mains .infor .info img {
+    width: 180px;
+    height: 180px;
+}
+
+/* 推荐头部显示的书名 */
+/* 主体右边显示的书名 */
+.recommend_left .show_info .price h3,
+.mains .infor .info .price h3 {
+    /* 溢出隐藏 */
+    overflow: hidden;
+    padding-top: 5px;
+    height: 40px;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: "microsoft yahei";
+    text-align: left;
+}
+
+/* 推荐头部显示的链接 */
+/* 主体右边显示的链接 */
+.recommend_left .show_info .price h3 a,
+.mains .infor .info .price h3 a {
+    color: #333;
+}
+
+/* 推荐头部显示的价格 */
+/* 主体右边显示的价格 */
+.recommend_left .show_info .price,
+.mains .infor .info .price {
+    margin: 0 auto;
+    width: 180px;
+}
+
+/* 推荐头部显示的li */
+/* 主体右边显示的li */
+.recommend_left .show_info .price li,
+.mains .infor .info .price li {
+    float: left;
+    line-height: 32px;
+    font-family: "microsoft yahei";
+    color: #949494;
+}
+
+/* 推荐头部显示的红色价格 */
+/* 主体右边显示的红色价格 */
+.recommend_left .show_info .price li span,
+.mains .infor .info .price li span {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial;
+    color: #E93939;
+}
+
+/* 推荐头部显示的中划线价格 */
+/* 主体右边显示的中划线价格 */
+.recommend_left .show_info .price .oldPrice,
+.mains .infor .info .price .oldPrice {
+    padding-left: 10px;
+    text-decoration: line-through;
+    color: #999;
+}
+
+.recommend_right {
+    float: right;
+    width: 201px;
+}
+
+.recommend_right .item {
+    margin-bottom: 10px;
+    border: 1px solid #ededed;
+}
+
+/* 第二个框的高度 */
+.recommend_right .item:last-child {
+    height: 144px;
+}
+
+/* 在线调查文字设置 */
+.recommend_right .item h3 {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-left: 5px solid #065221;
+    background: #F7F7F7;
+    text-indent: 15px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #333;
+}
+
+/* 表单 */
+.recommend_right .item form {
+    padding: 8px;
+    width: 199px;
+    height: 121px;
+    font-family: "microsoft yahei";
+    box-sizing: border-box;
+}
+
+/* 在线调查中表单的文字信息 */
+.recommend_right .item form p {
+    height: 20px;
+    font-family: "microsoft yahei";
+}
+
+/* 提交和重置按钮 */
+.recommend_right .item form #btn,
+.recommend_right .item form #res {
+    margin: 5px 10px 0 0;
+    width: 52px;
+    height: 21px;
+    text-align: center;
+    line-height: 21px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    background: #3E9915;
+}
+
+/* 订单输入框 */
+.recommend_right .item form #txt {
+    margin-top: 5px;
+    padding-left: 5px;
+    width: 180px;
+    height: 30px;
+    line-height: 30px;
+    background: #f9f9f9;
+    border: 1px solid #CCC;
+}
+
+/* 查询订单 */
+.recommend_right .item form #seach {
+    margin-top: 10px;
+    padding: 0 20px;
+    width: 185px;
+    height: 30px;
+    line-height: 30px;
+    background: #065221;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* 主要内容区域 */
+.mains {
+    /* 开启BFC，清除外边距合并 */
+    display: block;
+    margin-top: 10px;
+    min-width: 1200px;
+}
+
+/* 每个大的html等项目 */
+.mains .item {
+    margin-top: 15px;
+}
+
+/* html */
+/* html头部信息 */
+.mains .main_title {
+    width: 100%;
+    height: 38px;
+    line-height: 38px;
+    border-bottom: 2px solid #065221;
+}
+
+/* 1F等文字 */
+.mains .main_title h2 em {
+    font-family: "microsoft yahei";
+    font-style: normal;
+    font-size: 22px;
+    color: #065221;
+}
+
+/* HTML等文字 */
+.mains .main_title h2 span {
+    font-family: "microsoft yahei";
+    font-size: 20px;
+    color: #333;
+}
+
+/* 更多 */
+.mains .main_title h2 a {
+    float: right;
+    margin-right: 10px;
+    font-family: "microsoft yahei";
+    font-size: 12px;
+    color: #999;
+}
+
+/* 鼠标滑动更多的效果 */
+.mains .main_title h2 a:hover {
+    color: #F10215;
+}
+
+/* html主体信息 */
+.mains .main_info {
+    width: 100%;
+    height: 578px;
+}
+
+/* 主体左边*/
+.mains .main_info .infol {
+    float: left;
+    position: relative;
+    width: 240px;
+    height: 100%;
+    background: #F7F7F7;
+}
+
+/* 主体左边照片 */
+.mains .main_info .infol img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    width: 240px;
+    height: 280px;
+    cursor: pointer;
+}
+
+/* 主体左边链接 */
+.mains .main_info .infol a {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    width: 85%;
+    line-height: 40px;
+    background: #065221;
+    border-radius: 5px;
+    font-family: "microsoft yahei";
+    text-align: center;
+    font-size: 16px;
+    color: #FFF;
+}
+
+/* 主体右边 */
+.mains .main_info .infor {
+    float: right;
+    width: 958px;
+    height: 100%;
+}
+
+/* 主体右边ul */
+.mains .main_info .infor .info {
+    padding: 15px 0;
+    width: 24.85%;
+    height: 45%;
+    border: 1px solid #ededed;
+    border-top: none;
+    border-right: none;
+}
+
+/* 设置主体右边第4个和第8个li的右边框 */
+.mains .main_info .infor .info:nth-child(4),
+.mains .main_info .infor .info:nth-child(8) {
+    border-right: 1px solid #ededed;
+}
+
+/* footer部分 */
+.footer {
+    overflow: hidden;
+    min-width: 1200px;
+    margin-top: 15px;
+    background: #EEE;
+}
+
+/* 图描述 */
+.footer .footer_top {
+    /* 开启BFC，清除浮动带来的影响 */
+    overflow: hidden;
+    padding: 30px 0;
+    border-bottom: 1px solid #dedede;
+}
+
+.footer .footer_top h2 {
+    float: left;
+    margin-left: 70px;
+}
+
+/* 图 */
+.footer .footer_top h2::before {
+    content: "";
+    display: inline-block;
+    margin-right: 8px;
+    width: 38px;
+    height: 42px;
+    background: url(../images/fotter.png) 0 -192px;
+    vertical-align: middle;
+}
+
+.footer .footer_top h2:nth-child(2)::before {
+    background-position: -41px -192px;
+}
+
+.footer .footer_top h2:nth-child(3)::before {
+    background-position: -82px -192px;
+}
+
+.footer .footer_top h2:nth-child(4)::before {
+    background-position: -123px -192px;
+}
+
+/* 帮助区域 */
+.help {
+    overflow: hidden;
+    margin-top: 30px;
+    min-width: 1200px;
+    height: 170px;
+    border-bottom: 1px solid #dedede;
+}
+
+/* 帮助区域的ul */
+.help .help_list {
+    float: left;
+    width: 180px;
+}
+
+.help .help_list:first-child {
+    margin-left: 100px;
+}
+
+.help .help_list h3 {
+    padding-bottom: 5px;
+    height: 22px;
+}
+
+/* 帮助区域ul中的li */
+.help .help_list li {
+    padding-left: 5px;
+    height: 22px;
+}
+
+/* 帮助区域li中的a */
+.help .help_list li a {
+    color: #666;
+}
+
+.help .help_list li a:hover {
+    color: #F10215;
+}
+
+/* 版权图片 */
+.footer_bottom {
+    margin: 25px 0;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.footer_bottom a {
+    display: inline-block;
+    margin: 0 5px;
+    width: 103px;
+    height: 32px;
+    line-height: 1000px;
+    background: url(../images/fotter.png) no-repeat -205px -111px;
+}
+
+.footer_bottom a:nth-child(2) {
+    background-position: -205px -74px;
+}
+
+.footer_bottom a:nth-child(3) {
+    background-position: -205px -37px;
+}
+
+.footer_bottom a:nth-child(4) {
+    background: url(../images/copyright.png) no-repeat 0 -66px;
+}
+
+.footer_bottom a:nth-child(5) {
+    background-position: 0 -155px;
+}
+
+.footer_bottom a:nth-child(6) {
+    background: url(../images/copyright.png) no-repeat 0 -99px;
+}
+
+.footer_bottom a:nth-child(7) {
+    width: 70px;
+    background: url(../images/copyright.png) no-repeat -104px -99px;
+}
+
+.footer_bottom a:last-child {
+    background: url(../images/copyright.png) no-repeat -104px -131px;
+}
+
+/* 版权文字 */
+.copyright {
+    text-align: center;
+    line-height: 20px;
+}
